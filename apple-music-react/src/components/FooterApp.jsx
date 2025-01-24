@@ -14,7 +14,7 @@ const FooterApp = () => {
 
           <div className="flex justify-center md:justify-between">
             <div className="flex flex-col gap-3 text-center md:text-left">
-              <h3 className="font-semibold text-lg">Explore</h3>
+              <h3 className="font-semibold text-lg">Espolra</h3>
               <a href="#" className="text-gray-400 hover:text-gray-200">
                 Home
               </a>
@@ -34,7 +34,7 @@ const FooterApp = () => {
                 Join Now
               </a>
               <a href="#" className="text-gray-400 hover:text-gray-200">
-                Support
+                Supporto
               </a>
             </div>
           </div>
@@ -44,21 +44,21 @@ const FooterApp = () => {
             <div className="flex gap-4">
               <a href="#" className="hover:text-gray-200">
                 <img
-                  src="/icons/facebook.svg"
+                  src="src/assets/assets_given/images/facebook.png"
                   alt="Facebook"
                   className="w-6 h-6"
                 />
               </a>
               <a href="#" className="hover:text-gray-200">
                 <img
-                  src="/icons/twitter.svg"
+                  src="src/assets/assets_given/images/twitter.png"
                   alt="Twitter"
                   className="w-6 h-6"
                 />
               </a>
               <a href="#" className="hover:text-gray-200">
                 <img
-                  src="/icons/instagram.svg"
+                  src="src/assets/assets_given/images/instagram.png"
                   alt="Instagram"
                   className="w-6 h-6"
                 />

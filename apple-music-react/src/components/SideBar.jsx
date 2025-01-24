@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { assets } from "../assets/assets";
-const SideBar = () => {
+
+const SideBar = ({ onSearch, query }) => {
+  const [inputValue, setInputValue] = useState(query);
+
+  const handleSearchChange = (event) => {
+    setInputValue(event.target.value);
+    onSearch(event.target.value);
+  };
+
   return (
     <div className="w-[25%] h-full p-2 flex-col gap-2 text-white hidden lg:flex">
       <div className="bg-[#121212] h-[45%] rounded-lg flex flex-col justify-start p-6 space-y-6">
@@ -9,12 +17,17 @@ const SideBar = () => {
         </div>
 
         <div className="flex flex-col space-y-2">
-          <label for="Cerca" className="text-lg font-semibold text-gray-300">
+          <label
+            htmlFor="Cerca"
+            className="text-lg font-semibold text-gray-300"
+          >
             Search:
           </label>
           <input
             type="text"
             id="Cerca"
+            value={inputValue}
+            onChange={handleSearchChange}
             className="px-4 py-2 border rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
             placeholder="Search..."
           />

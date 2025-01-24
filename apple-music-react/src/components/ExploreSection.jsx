@@ -13,7 +13,7 @@ const ExploreSection = () => {
           className="w-5 h-5 ml-2"
         />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
         <div className="flex items-center justify-between gap-2 p-4 bg-[#242424] text-[#ea556a] rounded-lg hover:text-[#f1a7c0] cursor-pointer  ">
           <p>Esplora per genere</p>
           <img
