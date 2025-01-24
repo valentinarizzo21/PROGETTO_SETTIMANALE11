@@ -11,10 +11,14 @@ const Player = () => {
   return (
     <div className="h-[10%] bg-black flex justify-between items-center text-white px-4">
       <div className="hidden lg:flex items-center gap-4">
-        <img className="w-12" src="" alt="Album" />
+        <img
+          className="w-12"
+          src="https://i.scdn.co/image/ab67616d00001e02ee2fe4a7b285d3817b470859"
+          alt="Album"
+        />
         <div>
-          <p>The Weeknd</p>
-          <p>Timeless</p>
+          <p className="font-bold">The Weeknd</p>
+          <p className="text-sm">Timeless</p>
         </div>
       </div>
       <div className="flex flex-col items-center gap-1 m-auto">

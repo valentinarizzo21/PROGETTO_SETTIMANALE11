@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { assets } from "../assets/assets";
 import NavBar from "./NavBar";
 import AlbumItem from "./AlbumItem";
 import PlaylistSection from "./PlaylistSection";
 import NovitaSection from "./NovitaSection";
 import ExploreSection from "./ExploreSection";
+import FooterApp from "./FooterApp";
 
 const DisplayHome = () => {
   const [data, setData] = useState(null);
@@ -34,7 +36,14 @@ const DisplayHome = () => {
       <NovitaSection />
       <PlaylistSection />
       <div className="mb-4">
-        <h1 className="my-5 font-bold text-2xl">The Weeknd</h1>
+        <div className="flex items-center">
+          <h1 className="my-5 font-bold text-2xl">The Weeknd</h1>
+          <img
+            src={assets.arrow_right}
+            alt="Arrow Right"
+            className="w-5 h-5 ml-2"
+          />
+        </div>
         <div className="flex overflow-auto">
           {error && <p>Errore: {error}</p>}
 
@@ -54,6 +63,7 @@ const DisplayHome = () => {
         </div>
       </div>
       <ExploreSection />
+      <FooterApp />
     </div>
   );
 };

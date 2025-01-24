@@ -1,0 +1,4 @@
+.rightArrow {
+  filter: invert(38%) sepia(75%) saturate(462%) hue-rotate(327deg)
+    brightness(94%) contrast(93%);
+}

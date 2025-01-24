@@ -1,9 +1,18 @@
 import React from "react";
+import { assets } from "../assets/assets";
 
 const NovitaSection = () => {
   return (
     <div className="mb-4">
-      <h1 className="my-5 font-bold text-2xl">Novità:</h1>
+      <div className="flex items-center">
+        <h1 className="my-5 font-bold text-2xl">Novità</h1>
+        <img
+          src={assets.arrow_right}
+          alt="Arrow Right"
+          className="w-5 h-5 ml-2"
+        />
+      </div>
+
       <div className="flex overflow-auto">
         <div className="min-w-[500px] p-2 px-3 rounded cursor-pointer hover:bg-[#ffffff26]">
           <div className="p-3 text-white">

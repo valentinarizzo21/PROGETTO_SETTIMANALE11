@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 import { useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
 
@@ -27,8 +28,8 @@ const NavBar = () => {
             alt="Forward"
           />
         </div>
-        <div>
-          <p className="appleIcon w-7 h-7"></p>
+        <div className="flex items-center justify-center bg-[#242424] w-[45vw]">
+          <p className="appleIcon text-4xl"></p>
         </div>
         <div className="flex items-center gap-4">
           <p className="bg-white hover:bg-[#ea556a] text-black text-[15px] px-4 py-1 rounded-2xl hidden md:block cursor-pointer transition duration-200">
@@ -40,7 +41,7 @@ const NavBar = () => {
           >
             Accedi
           </p>
-          <p className="bg-[#ea556a] text-black w-10 h-10 rounded-full flex items-center justify-center cursor-pointer hover:bg-purple-600 transition duration-200">
+          <p className="bg-[#ea556a] text-black w-10 h-10 rounded-full flex items-center justify-center cursor-pointer hover:text-[#f1a7c0] transition duration-200">
             V
           </p>
         </div>
