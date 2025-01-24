@@ -6,8 +6,6 @@ import { assets } from "../assets/assets";
 const NavBar = () => {
   const navigate = useNavigate();
 
-  const handleInstallApp = () => {};
-
   return (
     <>
       <div className="w-full flex justify-between items-center font-semibold ">
@@ -32,10 +30,7 @@ const NavBar = () => {
           <p className="bg-white hover:bg-[#ea556a] text-black text-[15px] px-4 py-1 rounded-2xl hidden md:block cursor-pointer transition duration-200">
             Esplora Premium
           </p>
-          <p
-            onClick={handleInstallApp}
-            className="bg-[#ea556a] py-1 px-3 rounded-2xl text-[15px] cursor-pointer hover:bg-gray-700 transition duration-200"
-          >
+          <p className="bg-[#ea556a] py-1 px-3 rounded-2xl text-[15px] cursor-pointer hover:bg-gray-700 transition duration-200">
             Accedi
           </p>
           <p className="bg-[#ea556a] text-black w-10 h-10 rounded-full flex items-center justify-center cursor-pointer hover:text-[#f1a7c0] transition duration-200">
