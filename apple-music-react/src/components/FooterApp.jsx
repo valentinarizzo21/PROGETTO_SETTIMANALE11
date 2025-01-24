@@ -40,7 +40,7 @@ const FooterApp = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-end gap-4">
-            <h3 className="font-semibold text-lg">Connect with us</h3>
+            <h3 className="font-semibold text-lg">Scopri di più:</h3>
             <div className="flex gap-4">
               <a href="#" className="hover:text-gray-200">
                 <img
@@ -68,7 +68,7 @@ const FooterApp = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400">
-          <p>© 2025 Apple Music. All rights reserved.</p>
+          <p className="italic">© 2025 Apple Music. All rights reserved.</p>
           <div className="flex justify-center gap-4 mt-2">
             <a href="#" className="hover:text-gray-200">
               Privacy Policy
