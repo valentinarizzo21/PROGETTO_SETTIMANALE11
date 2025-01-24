@@ -6,10 +6,7 @@ import { assets } from "../assets/assets";
 const NavBar = () => {
   const navigate = useNavigate();
 
-  const handleInstallApp = () => {
-    // Qui puoi aggiungere una logica per reindirizzare a una pagina di download dell'app
-    console.log("Navigating to install page...");
-  };
+  const handleInstallApp = () => {};
 
   return (
     <>
